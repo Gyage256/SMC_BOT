@@ -3,3 +3,8 @@
 2026-11-04 23:20:16 [bybit] no data (network/geo-block?)
 2026-11-04 23:20:22 [binance] no data (network/geo-block?)
 2026-11-04 23:20:22 paper: 0 closed, 1 open
+2026-11-04 23:33:02 bot started (paper mode, no real orders)
+2026-11-04 23:33:09 SIGNAL LONG XCRCL-USDT okx 15m [PA] entry 76.29 SL 76.12 TP 76.8
+2026-11-04 23:33:13 SIGNAL LONG NEAR-USDT okx 15m [SMC-CHoCH] entry 4.036 SL 4.00322 TP 4.13434
+2026-11-04 23:33:19 SIGNAL LONG DOT-USDT kucoin 15m [PA] entry 0.9597 SL 0.956694 TP 0.968717
+2026-11-04 23:33:39 paper: 0 closed, 4 open
