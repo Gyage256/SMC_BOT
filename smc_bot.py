@@ -19,7 +19,7 @@ import requests
 
 # ============================ 0. CONFIG ============================
 CFG = {
-    "exchanges": ["okx", "kucoin", "gate", "bybit", "binance"],   # blocked ones just log "no data"
+    "exchanges": ["okx", "kucoin", "gate"],   # blocked ones just log "no data"
     "timeframes": ["15m", "1h"],       # CRT runs on "1h" only (needs daily + 1h)
     "quote": "USDT",                   # which pairs to scan for setups
     "top_n": 12,                       # top-N pairs by 24h volume, per exchange
