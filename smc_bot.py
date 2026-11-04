@@ -14,12 +14,12 @@ Needs only:  pkg install python && pip install requests
 Run:         termux-wake-lock && nohup python smc_bot.py > out.log 2>&1 &
 """
 import json, os, sys, time, shutil, subprocess, traceback
-from datetime import datetime
+from datetime import datetime, timezone
 import requests
 
 # ============================ 0. CONFIG ============================
 CFG = {
-    "exchanges": ["okx", "kucoin", "gate"],   # blocked ones just log "no data"
+    "exchanges": ["okx", "kucoin", "gate", "bybit", "binance"],   # blocked ones just log "no data"
     "timeframes": ["15m", "1h"],       # CRT runs on "1h" only (needs daily + 1h)
     "quote": "USDT",                   # which pairs to scan for setups
     "top_n": 12,                       # top-N pairs by 24h volume, per exchange
@@ -514,6 +514,7 @@ def update_trades(st):
             continue
         r -= 2 * CFG["paper_fee"] * t["entry"] / risk
         t["r"] = round(r, 3)
+        t["ct"] = int(time.time() * 1000)
         st["closed"].append(t)
         log(f"CLOSED {t['side']} {t['sym']} {t['ex']} [{t['strat']}] R={t['r']:+}")
     st["open"] = still
@@ -533,36 +534,172 @@ def stats(st):
             f"{len(st['open'])} open{extra}")
 
 
+SITE_PAGES = [("index.html", "Dashboard"), ("trades.html", "Running"), ("markets.html", "Markets"),
+              ("history.html", "History"), ("settings.html", "Settings"), ("about.html", "About")]
+SITE_CSS = """:root{--bg:#0b0f17;--card:#131a26;--line:#223049;--tx:#e6edf6;--mut:#8a99b0;--g:#22c55e;--r:#ef4444;--b:#3b82f6}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:14px/1.5 system-ui,sans-serif}
+header{position:sticky;top:0;background:#0b0f17f2;border-bottom:1px solid var(--line);padding:10px 14px;z-index:5}
+.brand{font-weight:700;font-size:17px}.brand>span:first-child{color:var(--b)}
+nav{display:flex;gap:6px;overflow-x:auto;margin-top:8px}
+nav a{color:var(--mut);text-decoration:none;padding:6px 12px;border-radius:8px;white-space:nowrap}
+nav a.on{background:var(--card);color:var(--tx)}
+main{padding:14px;max-width:1000px;margin:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px;margin-bottom:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;margin-bottom:14px}
+.grid .card{margin:0}.k{color:var(--mut);font-size:12px}.v{font-size:22px;font-weight:700}
+h2{font-size:15px;margin:0 0 8px}.w{overflow-x:auto}
+table{width:100%;border-collapse:collapse;white-space:nowrap}th{color:var(--mut);font-weight:500;text-align:left}
+td,th{padding:7px 8px;border-bottom:1px solid var(--line)}
+.g{color:var(--g)}.r{color:var(--r)}.pill{padding:2px 8px;border-radius:99px;font-size:11px;font-weight:600}
+.long{background:#14532d;color:#86efac}.short{background:#7f1d1d;color:#fca5a5}
+.ok{background:#14532d;color:#86efac}.off{background:#3f3f46;color:#d4d4d8}
+.chip{display:inline-block;background:#1b2536;border-radius:6px;padding:2px 8px;margin:2px;font-size:12px}
+select{background:var(--card);color:var(--tx);border:1px solid var(--line);border-radius:8px;padding:6px;margin:0 6px 8px 0}
+p{margin:6px 0}footer{color:var(--mut);text-align:center;padding:18px;font-size:12px}"""
+
+
+def fts(ms):
+    try:
+        return datetime.fromtimestamp(float(ms) / 1000, timezone.utc).strftime("%b %d %H:%M")
+    except Exception:
+        return "-"
+
+
 def write_report(st):
-    """Writes index.html (mobile-friendly results page) next to the script."""
-    from html import escape
-    cl = st["closed"]
-    by = {}
+    """Writes the multi-page dashboard next to the script (served by GitHub Pages)."""
+    from html import escape as E
+    cl, op = st["closed"], st["open"]
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M")
+    cls = lambda v: "g" if v > 0 else ("r" if v < 0 else "")
+
+    def page(file, title, body):
+        nav = "".join(f'<a href="{f}" class="{"on" if f == file else ""}">{n}</a>' for f, n in SITE_PAGES)
+        html = ("<!doctype html><html><head><meta charset=utf-8>"
+                '<meta name=viewport content="width=device-width,initial-scale=1">'
+                "<meta http-equiv=refresh content=300>"
+                f"<title>SignalBot - {title}</title><style>{SITE_CSS}</style></head><body>"
+                f'<header><div class=brand><span>Signal</span>Bot <span class="pill off">PAPER</span></div><nav>{nav}</nav></header>'
+                f"<main>{body}</main><footer>Updated {now} UTC &middot; paper trading, no real orders "
+                "&middot; not financial advice</footer></body></html>")
+        with open(os.path.join(HERE, file), "w") as fh:
+            fh.write(html)
+
+    def side(t):
+        return f'<span class="pill {t["side"]}">{t["side"].upper()}</span>'
+
+    def rr(t):
+        risk = abs(t["entry"] - t["sl"])
+        return f"1:{abs(t['tp'] - t['entry']) / risk:.1f}" if risk else "-"
+
+    def orow(t):
+        return (f'<tr><td>{side(t)}<td>{E(t["sym"])}<td>{E(t["ex"])}<td>{E(t["tf"])}<td>{E(t["strat"])}'
+                f'<td>{t["entry"]:.6g}<td class=r>{t["sl"]:.6g}<td class=g>{t["tp"]:.6g}<td>{rr(t)}<td>{fts(t["t"])}</tr>')
+
+    def hrow(t):
+        win = "win" if t["r"] > 0 else "loss"
+        return (f'<tr data-s="{E(t["strat"])}" data-r="{win}"><td>{fts(t.get("ct", t["t"]))}<td>{side(t)}'
+                f'<td>{E(t["sym"])}<td>{E(t["ex"])}<td>{E(t["strat"])}<td class="{cls(t["r"])}">{t["r"]:+}R</tr>')
+
+    kpi = lambda k, v, c="": f'<div class=card><div class=k>{k}</div><div class="v {c}">{v}</div></div>'
+    OH = "<tr><th>Side<th>Pair<th>Exchange<th>TF<th>Strategy<th>Entry<th>SL<th>TP<th>R:R<th>Opened</tr>"
+    none = lambda n, m: f"<tr><td colspan={n} class=k>{m}</tr>"
+
+    tot = sum(t["r"] for t in cl)
+    wr = f"{100 * sum(1 for t in cl if t['r'] > 0) / len(cl):.0f}%" if cl else "-"
+    ap = [t for t in cl if t.get("score", 1) >= 2]
+    by, pts, run = {}, [], 0.0
     for t in cl:
-        for name in t["strat"].split("+"):
-            g = by.setdefault(name, [0, 0, 0.0])
+        run += t["r"]
+        pts.append(run)
+        for n in t["strat"].split("+"):
+            g = by.setdefault(n, [0, 0, 0.0])
             g[0] += 1
             g[1] += 1 if t["r"] > 0 else 0
             g[2] += t["r"]
-    srows = "".join(f"<tr><td>{escape(n)}</td><td>{g[0]}</td><td>{100 * g[1] / g[0]:.0f}%</td>"
-                    f"<td>{g[2]:+.1f}R</td></tr>" for n, g in sorted(by.items()))
-    orows = "".join(f"<tr><td>{escape(t['side'])}</td><td>{escape(t['sym'])}</td><td>{escape(t['ex'])}</td>"
-                    f"<td>{escape(t['tf'])}</td><td>{escape(t['strat'])}</td><td>{t['entry']:.6g}</td></tr>"
-                    for t in st["open"])
-    crows = "".join(f"<tr><td>{escape(t['side'])}</td><td>{escape(t['sym'])}</td><td>{escape(t['ex'])}</td>"
-                    f"<td>{escape(t['strat'])}</td><td>{t['r']:+}</td></tr>" for t in reversed(cl[-40:]))
-    page = f"""<!doctype html><html><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="300">
-<title>SignalBot</title><style>body{{font-family:sans-serif;background:#111;color:#eee;margin:12px}}
-table{{border-collapse:collapse;width:100%;margin-bottom:18px;font-size:14px}}
-td,th{{border-bottom:1px solid #333;padding:5px;text-align:left}}h2{{margin:14px 0 6px}}</style></head><body>
-<h1>SignalBot (paper)</h1><p>{escape(stats(st))}</p><p>Updated {datetime.now():%Y-%m-%d %H:%M}</p>
-<h2>By strategy</h2><table><tr><th>Strategy</th><th>Trades</th><th>Win</th><th>Total</th></tr>{srows}</table>
-<h2>Open</h2><table><tr><th>Side</th><th>Pair</th><th>Ex</th><th>TF</th><th>Strat</th><th>Entry</th></tr>{orows}</table>
-<h2>Last closed</h2><table><tr><th>Side</th><th>Pair</th><th>Ex</th><th>Strat</th><th>R</th></tr>{crows}</table>
-</body></html>"""
-    with open(os.path.join(HERE, "index.html"), "w") as fh:
-        fh.write(page)
+    if len(pts) >= 2:
+        lo, hi = min(0, min(pts)), max(0, max(pts))
+        sp = (hi - lo) or 1
+        y = lambda v: 145 - (v - lo) / sp * 135
+        xy = " ".join(f"{i * 600 / (len(pts) - 1):.1f},{y(v):.1f}" for i, v in enumerate(pts))
+        col = "#22c55e" if pts[-1] >= 0 else "#ef4444"
+        eq = (f'<svg viewBox="0 0 600 150" width="100%" height=150 preserveAspectRatio=none>'
+              f'<line x1=0 x2=600 y1={y(0):.1f} y2={y(0):.1f} stroke="#223049" stroke-dasharray="4"/>'
+              f'<polyline fill=none stroke="{col}" stroke-width=2 points="{xy}"/></svg>')
+    else:
+        eq = "<p class=k>The curve appears after the first 2 closed trades.</p>"
+    srows = "".join(f'<tr><td>{E(n)}<td>{g[0]}<td>{100 * g[1] / g[0]:.0f}%<td class="{cls(g[2])}">{g[2]:+.1f}R</tr>'
+                    for n, g in sorted(by.items())) or none(4, "No closed trades yet")
+
+    # 1 Dashboard
+    page("index.html", "Dashboard",
+         "<div class=grid>" + kpi("Total R", f"{tot:+.1f}R", cls(tot)) + kpi("Win rate", wr)
+         + kpi("Closed trades", len(cl)) + kpi("Running", len(op))
+         + kpi("A+ (2+ strategies)", f"{len(ap)} trades / {sum(t['r'] for t in ap):+.1f}R") + "</div>"
+         "<div class=card><h2>Equity curve (cumulative R)</h2>" + eq + "</div>"
+         "<div class=card><h2>Performance by strategy</h2><div class=w><table>"
+         "<tr><th>Strategy<th>Trades<th>Win<th>Total</tr>" + srows + "</table></div></div>"
+         "<div class=card><h2>Latest running trades</h2><div class=w><table>" + OH
+         + ("".join(orow(t) for t in reversed(op[-5:])) or none(10, "Nothing running")) + "</table></div></div>")
+
+    # 2 Running trades
+    page("trades.html", "Running",
+         f"<div class=card><h2>Running trades ({len(op)})</h2><div class=w><table>" + OH
+         + ("".join(orow(t) for t in reversed(op)) or none(10, "Nothing running")) + "</table></div></div>")
+
+    # 3 Markets
+    mk, cards = st.get("markets", {}), ""
+    for name in CFG["exchanges"]:
+        m = mk.get(name, {})
+        badge = ('<span class="pill ok">online</span>' if m.get("ok")
+                 else '<span class="pill off">no data</span>' if m else '<span class="pill off">waiting</span>')
+        chips = "".join(f"<span class=chip>{E(c)}</span>" for c in m.get("top", []))
+        last = fts(m["ts"]) if m else "-"
+        cards += (f"<div class=card><h2>{E(name.upper())} {badge}</h2>"
+                  f"<div class=k>Last scan {last} UTC &middot; pairs scanned</div>{chips or '<p class=k>-</p>'}</div>")
+    arows = "".join(f'<tr><td>{fts(a["ts"])}<td>{E(a["ex"])}<td>{E(a["path"])}<td class=g>+{a["pct"]}%</tr>'
+                    for a in reversed(st.get("arb", []))) or none(4, "No gap above the threshold yet")
+    page("markets.html", "Markets",
+         cards + "<div class=card><h2>Triangular arbitrage (gross, before fees, top of book)</h2><div class=w><table>"
+         "<tr><th>Time<th>Exchange<th>Path<th>Gap</tr>" + arows + "</table></div></div>")
+
+    # 4 History (with filters)
+    opts = "".join(f"<option>{E(n)}</option>" for n in sorted(by))
+    js = ("<script>function f(){var s=fs.value,r=fr.value;document.querySelectorAll('#h tr[data-s]').forEach(function(e)"
+          "{e.style.display=((!s||e.dataset.s.split('+').indexOf(s)>-1)&&(!r||e.dataset.r==r))?'':'none'})}"
+          "fs.onchange=fr.onchange=f</script>")
+    page("history.html", "History",
+         f"<div class=card><h2>Trade history ({len(cl)})</h2>"
+         f'<select id=fs><option value="">All strategies</option>{opts}</select>'
+         '<select id=fr><option value="">Wins and losses</option><option value=win>Wins</option><option value=loss>Losses</option></select>'
+         '<div class=w><table id=h><tr><th>Closed<th>Side<th>Pair<th>Exchange<th>Strategy<th>Result</tr>'
+         + ("".join(hrow(t) for t in reversed(cl[-300:])) or none(6, "No closed trades yet"))
+         + "</table></div></div>" + js)
+
+    # 5 Settings (read-only view of CFG)
+    desc = {"rr": "Reward:risk target", "min_confluence": "Strategies that must agree (2 = A+ only)",
+            "timeframes": "Candle timeframes scanned", "top_n": "Pairs per exchange (by volume)",
+            "scan_every": "Seconds between scans (local runs)", "exchanges": "Exchanges scanned",
+            "crt_ratio": "CRT swept/sweeping candle ratio", "arb_min_profit": "Min gross arbitrage gap"}
+    srows2 = "".join(f"<tr><td>{E(k)}<td>{E(', '.join(map(str, v)) if isinstance(v, list) else str(v))}"
+                     f"<td class=k>{E(desc.get(k, ''))}</tr>" for k, v in CFG.items())
+    page("settings.html", "Settings",
+         "<div class=card><h2>Bot settings (read-only)</h2><p class=k>To change a setting, edit the CFG block at the top "
+         "of smc_bot.py in your repo and commit. The next run uses it.</p><div class=w><table>"
+         "<tr><th>Setting<th>Value<th>Meaning</tr>" + srows2 + "</table></div></div>")
+
+    # 6 About
+    page("about.html", "About",
+         "<div class=card><h2>About SignalBot</h2><p>A scanner that looks for trade setups on several exchanges and "
+         "records them as <b>paper trades</b>: virtual entries with a stop loss and a 1:3 target. It never places real orders.</p></div>"
+         "<div class=card><h2>Strategies</h2>"
+         "<p><b>SMC</b>: break of structure or change of character, then price returns to the unmitigated order block.</p>"
+         "<p><b>DEMAND / SUPPLY</b>: a small base candle followed by a strong impulse; a fresh zone that price revisits.</p>"
+         "<p><b>CRT</b>: a daily candle sweeps the previous day's high or low and closes back inside; a 1h CHoCH confirms; entry at the order block.</p>"
+         "<p><b>PA</b>: engulfing or pin bar at a recent swing level, in the direction of the EMA50 trend.</p>"
+         "<p><b>A+</b> means two or more strategies agreed on the same setup.</p></div>"
+         "<div class=card><h2>How to read the results</h2><p>R is risk units: a stop-out is -1R, a target hit is +3R. "
+         "Judge a strategy only after 100+ closed trades. Fees and slippage are not counted.</p>"
+         "<p class=k>Educational tool. Not financial advice.</p></div>")
 
 
 # ============================ 5. MAIN ============================
@@ -570,14 +707,19 @@ def scan_exchange(name, st):
     ex = EXCH[name]
     pairs = ex.pairs()
     if not pairs:
+        st.setdefault("markets", {})[name] = dict(ok=False, ts=int(time.time() * 1000), top=[])
         log(f"[{name}] no data (network/geo-block?)")
         return
     for start in CFG["arb_start"]:
         for prof, path in triangular(pairs, start):
+            st.setdefault("arb", []).append(dict(ex=name, path=" > ".join(path) + " > " + path[0],
+                                                 pct=round(prof * 100, 3), ts=int(time.time() * 1000)))
+            st["arb"] = st["arb"][-15:]
             log(f"ARB {name} {' > '.join(path)} > {path[0]}  +{prof * 100:.3f}% (gross, top of book)")
     cand = [(p["qvol"], s) for s, p in pairs.items()
             if p["quote"] == CFG["quote"] and p["base"] not in STABLES]
     top = [s for _, s in sorted(cand, reverse=True)[:CFG["top_n"]]]
+    st.setdefault("markets", {})[name] = dict(ok=True, ts=int(time.time() * 1000), top=[coin(x) for x in top])
     for sym in top:
         daily = None
         for tf in CFG["timeframes"]:
