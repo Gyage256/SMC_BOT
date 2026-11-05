@@ -35,3 +35,14 @@
 2026-11-05 03:30:04 CLOSED long PEPE-USDT okx [SMC-CHoCH] R=+3.0
 2026-11-05 03:30:04 CLOSED short TRUMP-USDT okx [SMC-BOS] R=+3.0
 2026-11-05 03:30:05 paper: 7 closed, win 29%, total +1.0R, 5 open
+2026-11-05 11:26:30 bot started (paper mode, no real orders)
+2026-11-05 11:26:31 SIGNAL LONG ETH-USDT okx 15m [PA] entry 2420.45 SL 2417.3 TP 2429.91
+2026-11-05 11:26:57 SIGNAL SHORT AIN_USDT gate 1h [PA] entry 0.26602 SL 0.28357 TP 0.21337
+2026-11-05 11:26:58 SIGNAL LONG LINK_USDT gate 15m [PA] entry 11.55 SL 11.5183 TP 11.6451
+2026-11-05 11:27:04 [bybit] no data (network/geo-block?)
+2026-11-05 11:27:10 [binance] no data (network/geo-block?)
+2026-11-05 11:27:10 CLOSED long UNI-USDT okx [SMC-BOS] R=-1.0
+2026-11-05 11:27:11 CLOSED long DOT-USDT kucoin [PA] R=-1.0
+2026-11-05 11:27:11 CLOSED long NEAR_USDT gate [PA] R=-1.0
+2026-11-05 11:27:11 CLOSED long BNB_USDT gate [PA] R=-1.0
+2026-11-05 11:27:11 paper: 11 closed, win 18%, total -3.0R, 4 open
