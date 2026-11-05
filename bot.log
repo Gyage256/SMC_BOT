@@ -18,3 +18,9 @@
 2026-11-05 00:10:34 CLOSED long XCRCL-USDT okx [PA] R=-1.0
 2026-11-05 00:10:34 CLOSED long DOT-USDT kucoin [PA] R=-1.0
 2026-11-05 00:10:34 paper: 2 closed, win 0%, total -2.0R, 6 open
+2026-11-05 00:32:06 bot started (paper mode, no real orders)
+2026-11-05 00:32:15 SIGNAL SHORT TRUMP-USDT okx 15m [SMC-BOS] entry 1.277 SL 1.29075 TP 1.23575
+2026-11-05 00:32:50 [bybit] no data (network/geo-block?)
+2026-11-05 00:32:57 [binance] no data (network/geo-block?)
+2026-11-05 00:32:57 CLOSED long NEAR-USDT okx [SMC-CHoCH] R=-1.0
+2026-11-05 00:32:58 paper: 3 closed, win 0%, total -3.0R, 6 open
