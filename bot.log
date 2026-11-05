@@ -24,3 +24,14 @@
 2026-11-05 00:32:57 [binance] no data (network/geo-block?)
 2026-11-05 00:32:57 CLOSED long NEAR-USDT okx [SMC-CHoCH] R=-1.0
 2026-11-05 00:32:58 paper: 3 closed, win 0%, total -3.0R, 6 open
+2026-11-05 03:29:13 bot started (paper mode, no real orders)
+2026-11-05 03:29:28 SIGNAL LONG DOT-USDT kucoin 15m [PA] entry 0.9583 SL 0.951769 TP 0.977892
+2026-11-05 03:29:44 SIGNAL LONG NEAR_USDT gate 15m [PA] entry 4.061 SL 4.03103 TP 4.15091
+2026-11-05 03:29:46 SIGNAL LONG BNB_USDT gate 15m [PA] entry 716.6 SL 715.189 TP 720.834
+2026-11-05 03:29:56 [bybit] no data (network/geo-block?)
+2026-11-05 03:30:03 [binance] no data (network/geo-block?)
+2026-11-05 03:30:03 CLOSED long ZEC-USDT okx [SMC-CHoCH] R=-1.0
+2026-11-05 03:30:03 CLOSED long XRP-USDT okx [SMC-CHoCH] R=-1.0
+2026-11-05 03:30:04 CLOSED long PEPE-USDT okx [SMC-CHoCH] R=+3.0
+2026-11-05 03:30:04 CLOSED short TRUMP-USDT okx [SMC-BOS] R=+3.0
+2026-11-05 03:30:05 paper: 7 closed, win 29%, total +1.0R, 5 open
