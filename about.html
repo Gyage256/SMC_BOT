@@ -1,0 +1,20 @@
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=refresh content=300><title>SignalBot - About</title><style>:root{--bg:#0b0f17;--card:#131a26;--line:#223049;--tx:#e6edf6;--mut:#8a99b0;--g:#22c55e;--r:#ef4444;--b:#3b82f6}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:14px/1.5 system-ui,sans-serif}
+header{position:sticky;top:0;background:#0b0f17f2;border-bottom:1px solid var(--line);padding:10px 14px;z-index:5}
+.brand{font-weight:700;font-size:17px}.brand>span:first-child{color:var(--b)}
+nav{display:flex;gap:6px;overflow-x:auto;margin-top:8px}
+nav a{color:var(--mut);text-decoration:none;padding:6px 12px;border-radius:8px;white-space:nowrap}
+nav a.on{background:var(--card);color:var(--tx)}
+main{padding:14px;max-width:1000px;margin:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px;margin-bottom:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;margin-bottom:14px}
+.grid .card{margin:0}.k{color:var(--mut);font-size:12px}.v{font-size:22px;font-weight:700}
+h2{font-size:15px;margin:0 0 8px}.w{overflow-x:auto}
+table{width:100%;border-collapse:collapse;white-space:nowrap}th{color:var(--mut);font-weight:500;text-align:left}
+td,th{padding:7px 8px;border-bottom:1px solid var(--line)}
+.g{color:var(--g)}.r{color:var(--r)}.pill{padding:2px 8px;border-radius:99px;font-size:11px;font-weight:600}
+.long{background:#14532d;color:#86efac}.short{background:#7f1d1d;color:#fca5a5}
+.ok{background:#14532d;color:#86efac}.off{background:#3f3f46;color:#d4d4d8}
+.chip{display:inline-block;background:#1b2536;border-radius:6px;padding:2px 8px;margin:2px;font-size:12px}
+select{background:var(--card);color:var(--tx);border:1px solid var(--line);border-radius:8px;padding:6px;margin:0 6px 8px 0}
+p{margin:6px 0}footer{color:var(--mut);text-align:center;padding:18px;font-size:12px}</style></head><body><header><div class=brand><span>Signal</span>Bot <span class="pill off">PAPER</span></div><nav><a href="index.html" class="">Dashboard</a><a href="trades.html" class="">Running</a><a href="markets.html" class="">Markets</a><a href="history.html" class="">History</a><a href="settings.html" class="">Settings</a><a href="about.html" class="on">About</a></nav></header><main><div class=card><h2>About SignalBot</h2><p>A scanner that looks for trade setups on several exchanges and records them as <b>paper trades</b>: virtual entries with a stop loss and a 1:3 target. It never places real orders.</p></div><div class=card><h2>Strategies</h2><p><b>SMC</b>: break of structure or change of character, then price returns to the unmitigated order block.</p><p><b>DEMAND / SUPPLY</b>: a small base candle followed by a strong impulse; a fresh zone that price revisits.</p><p><b>CRT</b>: a daily candle sweeps the previous day's high or low and closes back inside; a 1h CHoCH confirms; entry at the order block.</p><p><b>PA</b>: engulfing or pin bar at a recent swing level, in the direction of the EMA50 trend.</p><p><b>A+</b> means two or more strategies agreed on the same setup.</p></div><div class=card><h2>How to read the results</h2><p>R is risk units: a stop-out is -1R, a target hit is +3R. Judge a strategy only after 100+ closed trades. Fees and slippage are not counted.</p><p class=k>Educational tool. Not financial advice.</p></div></main><footer>Updated 2026-11-05 00:10 UTC &middot; paper trading, no real orders &middot; not financial advice</footer></body></html>

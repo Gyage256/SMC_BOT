@@ -1,0 +1,20 @@
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=refresh content=300><title>SignalBot - Settings</title><style>:root{--bg:#0b0f17;--card:#131a26;--line:#223049;--tx:#e6edf6;--mut:#8a99b0;--g:#22c55e;--r:#ef4444;--b:#3b82f6}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:14px/1.5 system-ui,sans-serif}
+header{position:sticky;top:0;background:#0b0f17f2;border-bottom:1px solid var(--line);padding:10px 14px;z-index:5}
+.brand{font-weight:700;font-size:17px}.brand>span:first-child{color:var(--b)}
+nav{display:flex;gap:6px;overflow-x:auto;margin-top:8px}
+nav a{color:var(--mut);text-decoration:none;padding:6px 12px;border-radius:8px;white-space:nowrap}
+nav a.on{background:var(--card);color:var(--tx)}
+main{padding:14px;max-width:1000px;margin:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px;margin-bottom:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;margin-bottom:14px}
+.grid .card{margin:0}.k{color:var(--mut);font-size:12px}.v{font-size:22px;font-weight:700}
+h2{font-size:15px;margin:0 0 8px}.w{overflow-x:auto}
+table{width:100%;border-collapse:collapse;white-space:nowrap}th{color:var(--mut);font-weight:500;text-align:left}
+td,th{padding:7px 8px;border-bottom:1px solid var(--line)}
+.g{color:var(--g)}.r{color:var(--r)}.pill{padding:2px 8px;border-radius:99px;font-size:11px;font-weight:600}
+.long{background:#14532d;color:#86efac}.short{background:#7f1d1d;color:#fca5a5}
+.ok{background:#14532d;color:#86efac}.off{background:#3f3f46;color:#d4d4d8}
+.chip{display:inline-block;background:#1b2536;border-radius:6px;padding:2px 8px;margin:2px;font-size:12px}
+select{background:var(--card);color:var(--tx);border:1px solid var(--line);border-radius:8px;padding:6px;margin:0 6px 8px 0}
+p{margin:6px 0}footer{color:var(--mut);text-align:center;padding:18px;font-size:12px}</style></head><body><header><div class=brand><span>Signal</span>Bot <span class="pill off">PAPER</span></div><nav><a href="index.html" class="">Dashboard</a><a href="trades.html" class="">Running</a><a href="markets.html" class="">Markets</a><a href="history.html" class="">History</a><a href="settings.html" class="on">Settings</a><a href="about.html" class="">About</a></nav></header><main><div class=card><h2>Bot settings (read-only)</h2><p class=k>To change a setting, edit the CFG block at the top of smc_bot.py in your repo and commit. The next run uses it.</p><div class=w><table><tr><th>Setting<th>Value<th>Meaning</tr><tr><td>exchanges<td>okx, kucoin, gate, bybit, binance<td class=k>Exchanges scanned</tr><tr><td>timeframes<td>15m, 1h<td class=k>Candle timeframes scanned</tr><tr><td>quote<td>USDT<td class=k></tr><tr><td>top_n<td>12<td class=k>Pairs per exchange (by volume)</tr><tr><td>rr<td>3.0<td class=k>Reward:risk target</tr><tr><td>min_confluence<td>1<td class=k>Strategies that must agree (2 = A+ only)</tr><tr><td>scan_every<td>300<td class=k>Seconds between scans (local runs)</tr><tr><td>paper_fee<td>0.0<td class=k></tr><tr><td>crt_ratio<td>1.85<td class=k>CRT swept/sweeping candle ratio</tr><tr><td>arb_start<td>USDT, BTC<td class=k></tr><tr><td>arb_fee<td>0.0<td class=k></tr><tr><td>arb_assets<td>USDT, USDC, BTC, ETH, BNB, SOL, XRP, DOGE, ADA, TRX, LINK, LTC, AVAX, TON<td class=k></tr><tr><td>arb_min_profit<td>0.002<td class=k>Min gross arbitrage gap</tr><tr><td>arb_min_qvol<td>200000<td class=k></tr><tr><td>max_bars<td>100<td class=k></tr></table></div></div></main><footer>Updated 2026-11-05 00:10 UTC &middot; paper trading, no real orders &middot; not financial advice</footer></body></html>

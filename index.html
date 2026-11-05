@@ -1,10 +1,20 @@
-<!doctype html><html><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="300">
-<title>SignalBot</title><style>body{font-family:sans-serif;background:#111;color:#eee;margin:12px}
-table{border-collapse:collapse;width:100%;margin-bottom:18px;font-size:14px}
-td,th{border-bottom:1px solid #333;padding:5px;text-align:left}h2{margin:14px 0 6px}</style></head><body>
-<h1>SignalBot (paper)</h1><p>paper: 0 closed, 4 open</p><p>Updated 2026-11-04 23:33</p>
-<h2>By strategy</h2><table><tr><th>Strategy</th><th>Trades</th><th>Win</th><th>Total</th></tr></table>
-<h2>Open</h2><table><tr><th>Side</th><th>Pair</th><th>Ex</th><th>TF</th><th>Strat</th><th>Entry</th></tr><tr><td>short</td><td>HYPE-USDT</td><td>okx</td><td>1h</td><td>SMC-BOS</td><td>84.2</td></tr><tr><td>long</td><td>XCRCL-USDT</td><td>okx</td><td>15m</td><td>PA</td><td>76.29</td></tr><tr><td>long</td><td>NEAR-USDT</td><td>okx</td><td>15m</td><td>SMC-CHoCH</td><td>4.036</td></tr><tr><td>long</td><td>DOT-USDT</td><td>kucoin</td><td>15m</td><td>PA</td><td>0.9597</td></tr></table>
-<h2>Last closed</h2><table><tr><th>Side</th><th>Pair</th><th>Ex</th><th>Strat</th><th>R</th></tr></table>
-</body></html>
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=refresh content=300><title>SignalBot - Dashboard</title><style>:root{--bg:#0b0f17;--card:#131a26;--line:#223049;--tx:#e6edf6;--mut:#8a99b0;--g:#22c55e;--r:#ef4444;--b:#3b82f6}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:14px/1.5 system-ui,sans-serif}
+header{position:sticky;top:0;background:#0b0f17f2;border-bottom:1px solid var(--line);padding:10px 14px;z-index:5}
+.brand{font-weight:700;font-size:17px}.brand>span:first-child{color:var(--b)}
+nav{display:flex;gap:6px;overflow-x:auto;margin-top:8px}
+nav a{color:var(--mut);text-decoration:none;padding:6px 12px;border-radius:8px;white-space:nowrap}
+nav a.on{background:var(--card);color:var(--tx)}
+main{padding:14px;max-width:1000px;margin:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px;margin-bottom:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;margin-bottom:14px}
+.grid .card{margin:0}.k{color:var(--mut);font-size:12px}.v{font-size:22px;font-weight:700}
+h2{font-size:15px;margin:0 0 8px}.w{overflow-x:auto}
+table{width:100%;border-collapse:collapse;white-space:nowrap}th{color:var(--mut);font-weight:500;text-align:left}
+td,th{padding:7px 8px;border-bottom:1px solid var(--line)}
+.g{color:var(--g)}.r{color:var(--r)}.pill{padding:2px 8px;border-radius:99px;font-size:11px;font-weight:600}
+.long{background:#14532d;color:#86efac}.short{background:#7f1d1d;color:#fca5a5}
+.ok{background:#14532d;color:#86efac}.off{background:#3f3f46;color:#d4d4d8}
+.chip{display:inline-block;background:#1b2536;border-radius:6px;padding:2px 8px;margin:2px;font-size:12px}
+select{background:var(--card);color:var(--tx);border:1px solid var(--line);border-radius:8px;padding:6px;margin:0 6px 8px 0}
+p{margin:6px 0}footer{color:var(--mut);text-align:center;padding:18px;font-size:12px}</style></head><body><header><div class=brand><span>Signal</span>Bot <span class="pill off">PAPER</span></div><nav><a href="index.html" class="on">Dashboard</a><a href="trades.html" class="">Running</a><a href="markets.html" class="">Markets</a><a href="history.html" class="">History</a><a href="settings.html" class="">Settings</a><a href="about.html" class="">About</a></nav></header><main><div class=grid><div class=card><div class=k>Total R</div><div class="v r">-2.0R</div></div><div class=card><div class=k>Win rate</div><div class="v ">0%</div></div><div class=card><div class=k>Closed trades</div><div class="v ">2</div></div><div class=card><div class=k>Running</div><div class="v ">6</div></div><div class=card><div class=k>A+ (2+ strategies)</div><div class="v ">0 trades / +0.0R</div></div></div><div class=card><h2>Equity curve (cumulative R)</h2><svg viewBox="0 0 600 150" width="100%" height=150 preserveAspectRatio=none><line x1=0 x2=600 y1=10.0 y2=10.0 stroke="#223049" stroke-dasharray="4"/><polyline fill=none stroke="#ef4444" stroke-width=2 points="0.0,77.5 600.0,145.0"/></svg></div><div class=card><h2>Performance by strategy</h2><div class=w><table><tr><th>Strategy<th>Trades<th>Win<th>Total</tr><tr><td>PA<td>2<td>0%<td class="r">-2.0R</tr></table></div></div><div class=card><h2>Latest running trades</h2><div class=w><table><tr><th>Side<th>Pair<th>Exchange<th>TF<th>Strategy<th>Entry<th>SL<th>TP<th>R:R<th>Opened</tr><tr><td><span class="pill long">LONG</span><td>UNI-USDT<td>okx<td>1h<td>SMC-BOS<td>7.625<td class=r>7.52489<td class=g>7.92534<td>1:3.0<td>Nov 04 23:00</tr><tr><td><span class="pill long">LONG</span><td>PEPE-USDT<td>okx<td>15m<td>SMC-CHoCH<td>4.9701e-06<td class=r>4.93358e-06<td class=g>5.07965e-06<td>1:3.0<td>Nov 04 23:45</tr><tr><td><span class="pill long">LONG</span><td>XRP-USDT<td>okx<td>15m<td>SMC-CHoCH<td>1.3055<td class=r>1.30172<td class=g>1.31683<td>1:3.0<td>Nov 04 23:45</tr><tr><td><span class="pill long">LONG</span><td>ZEC-USDT<td>okx<td>15m<td>SMC-CHoCH<td>1296.88<td class=r>1285.48<td class=g>1331.07<td>1:3.0<td>Nov 04 23:45</tr><tr><td><span class="pill long">LONG</span><td>NEAR-USDT<td>okx<td>15m<td>SMC-CHoCH<td>4.036<td class=r>4.00322<td class=g>4.13434<td>1:3.0<td>Nov 04 23:15</tr></table></div></div></main><footer>Updated 2026-11-05 00:10 UTC &middot; paper trading, no real orders &middot; not financial advice</footer></body></html>
