@@ -87,3 +87,17 @@
 2026-11-06 14:30:54 CLOSED long PEPE-USDT okx [PA] R=+3.0
 2026-11-06 14:30:55 CLOSED long TRUMP-USDT okx [PA] R=-1.0
 2026-11-06 14:30:57 paper: 20 closed, win 15%, total -8.0R, 11 open
+2026-11-06 20:31:13 bot started (paper mode, no real orders)
+2026-11-06 20:31:15 SIGNAL LONG ETH-USDT okx 15m [SMC-CHoCH] entry 2231.95 SL 2225.97 TP 2249.88
+2026-11-06 20:31:17 SIGNAL SHORT SOL-USDT okx 15m [PA] entry 89.83 SL 90.3572 TP 88.2484
+2026-11-06 20:31:34 SIGNAL LONG SONIC-USDT kucoin 1h [PA] entry 0.02115 SL 0.0207556 TP 0.0223333
+2026-11-06 20:31:53 [bybit] no data (network/geo-block?)
+2026-11-06 20:31:59 [binance] no data (network/geo-block?)
+2026-11-06 20:32:00 CLOSED long AKE_USDT gate [PA] R=-1.0
+2026-11-06 20:32:00 CLOSED short BTC-USDT okx [PA] R=-1.0
+2026-11-06 20:32:00 CLOSED short ETH-USDT okx [SMC-CHoCH] R=-1.0
+2026-11-06 20:32:00 CLOSED long ZEC-USDT okx [PA] R=+3.0
+2026-11-06 20:32:01 CLOSED short XCRCL-USDT okx [SMC-CHoCH+PA] R=-1.0
+2026-11-06 20:32:01 CLOSED short UNI-USDT okx [PA] R=-1.0
+2026-11-06 20:32:01 CLOSED short SUI-USDT kucoin [SMC-CHoCH] R=-1.0
+2026-11-06 20:32:02 paper: 27 closed, win 15%, total -11.0R, 7 open | A+ only: 1 trades, -1.0R
