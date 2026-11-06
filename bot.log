@@ -64,3 +64,12 @@
 2026-11-05 23:58:33 CLOSED short XRP-USDT kucoin [SMC-BOS] R=-1.0
 2026-11-05 23:58:34 CLOSED short PEPE-USDT kucoin [PA] R=-1.0
 2026-11-05 23:58:34 paper: 17 closed, win 12%, total -9.0R, 2 open
+2026-11-06 06:20:15 bot started (paper mode, no real orders)
+2026-11-06 06:20:24 SIGNAL LONG PEPE-USDT okx 15m [PA] entry 4.8887e-06 SL 4.86946e-06 TP 4.94643e-06
+2026-11-06 06:20:25 SIGNAL LONG TRUMP-USDT okx 15m [PA] entry 1.219 SL 1.21001 TP 1.24596
+2026-11-06 06:20:35 SIGNAL LONG AAVE-USDT kucoin 1h [SMC-CHoCH] entry 130.017 SL 126.353 TP 141.009
+2026-11-06 06:20:49 SIGNAL LONG AKE_USDT gate 1h [PA] entry 0.004513 SL 0.00344451 TP 0.00771848
+2026-11-06 06:20:56 [bybit] no data (network/geo-block?)
+2026-11-06 06:21:02 [binance] no data (network/geo-block?)
+2026-11-06 06:21:02 CLOSED long XAUT-USDT okx [SMC-CHoCH] R=-1.0
+2026-11-06 06:21:03 paper: 18 closed, win 11%, total -10.0R, 5 open
