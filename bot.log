@@ -122,3 +122,13 @@
 2026-11-07 06:16:41 CLOSED long USD1_USDT gate [DEMAND] R=-1.0
 2026-11-07 06:16:41 CLOSED short BNB_USDT gate [PA] R=-1.0
 2026-11-07 06:16:42 paper: 34 closed, win 12%, total -18.0R, 6 open | A+ only: 1 trades, -1.0R
+2026-11-07 13:17:34 bot started (paper mode, no real orders)
+2026-11-07 13:17:35 SIGNAL A+ SHORT ETH-USDT okx 15m [SMC-BOS+PA] entry 2239.49 SL 2245.32 TP 2222.01
+2026-11-07 13:17:40 SIGNAL A+ SHORT XCRCL-USDT okx 15m [SMC-CHoCH+PA] entry 67.54 SL 67.6986 TP 67.0641
+2026-11-07 13:17:45 SIGNAL SHORT XMR-USDT kucoin 15m [PA] entry 613.19 SL 614.104 TP 610.447
+2026-11-07 13:17:49 SIGNAL SHORT TAO-USDT kucoin 15m [SMC-BOS] entry 224.73 SL 225.401 TP 222.717
+2026-11-07 13:17:50 SIGNAL SHORT AAVE-USDT kucoin 15m [PA] entry 131.264 SL 131.948 TP 129.212
+2026-11-07 13:18:08 [bybit] no data (network/geo-block?)
+2026-11-07 13:18:14 [binance] no data (network/geo-block?)
+2026-11-07 13:18:15 CLOSED short AKE_USDT gate [SUPPLY] R=-1.0
+2026-11-07 13:18:16 paper: 35 closed, win 11%, total -19.0R, 10 open | A+ only: 1 trades, -1.0R
