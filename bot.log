@@ -132,3 +132,13 @@
 2026-11-07 13:18:14 [binance] no data (network/geo-block?)
 2026-11-07 13:18:15 CLOSED short AKE_USDT gate [SUPPLY] R=-1.0
 2026-11-07 13:18:16 paper: 35 closed, win 11%, total -19.0R, 10 open | A+ only: 1 trades, -1.0R
+2026-11-07 18:06:08 bot started (paper mode, no real orders)
+2026-11-07 18:06:27 SIGNAL SHORT SONIC-USDT kucoin 1h [SMC-CHoCH] entry 0.02096 SL 0.0211384 TP 0.0204247
+2026-11-07 18:06:50 [bybit] no data (network/geo-block?)
+2026-11-07 18:06:56 [binance] no data (network/geo-block?)
+2026-11-07 18:06:58 CLOSED short ETH-USDT okx [SMC-BOS+PA] R=-1.0
+2026-11-07 18:06:58 CLOSED short XCRCL-USDT okx [SMC-CHoCH+PA] R=-1.0
+2026-11-07 18:06:58 CLOSED short XMR-USDT kucoin [PA] R=-1.0
+2026-11-07 18:06:58 CLOSED short TAO-USDT kucoin [SMC-BOS] R=-1.0
+2026-11-07 18:06:59 CLOSED short AAVE-USDT kucoin [PA] R=-1.0
+2026-11-07 18:06:59 paper: 40 closed, win 10%, total -24.0R, 6 open | A+ only: 3 trades, -3.0R
