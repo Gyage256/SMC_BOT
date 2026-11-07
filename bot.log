@@ -112,3 +112,13 @@
 2026-11-07 00:19:35 CLOSED short SOL-USDT okx [PA] R=-1.0
 2026-11-07 00:19:35 CLOSED long SONIC-USDT kucoin [PA] R=-1.0
 2026-11-07 00:19:36 paper: 30 closed, win 13%, total -14.0R, 8 open | A+ only: 1 trades, -1.0R
+2026-11-07 06:15:50 bot started (paper mode, no real orders)
+2026-11-07 06:16:01 SIGNAL SHORT NEAR-USDT okx 1h [PA] entry 3.743 SL 3.77964 TP 3.63307
+2026-11-07 06:16:20 SIGNAL SHORT AKE_USDT gate 15m [SUPPLY] entry 0.005951 SL 0.00612109 TP 0.00544074
+2026-11-07 06:16:33 [bybit] no data (network/geo-block?)
+2026-11-07 06:16:39 [binance] no data (network/geo-block?)
+2026-11-07 06:16:40 CLOSED long XMR-USDT kucoin [DEMAND] R=-1.0
+2026-11-07 06:16:40 CLOSED short SUI-USDT kucoin [PA] R=-1.0
+2026-11-07 06:16:41 CLOSED long USD1_USDT gate [DEMAND] R=-1.0
+2026-11-07 06:16:41 CLOSED short BNB_USDT gate [PA] R=-1.0
+2026-11-07 06:16:42 paper: 34 closed, win 12%, total -18.0R, 6 open | A+ only: 1 trades, -1.0R
