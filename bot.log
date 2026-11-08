@@ -191,3 +191,13 @@
 2026-11-08 14:16:56 CLOSED short NEAR-USDT okx [PA] R=-1.0
 2026-11-08 14:16:56 CLOSED short LIT_USDT gate [PA] R=-1.0
 2026-11-08 14:16:57 paper: 54 closed, win 15%, total -22.0R, 11 open | A+ only: 3 trades, -3.0R
+2026-11-08 18:53:18 bot started (paper mode, no real orders)
+2026-11-08 18:53:39 SIGNAL LONG TAO-USDT kucoin 1h [SMC-CHoCH] entry 223.21 SL 221.486 TP 228.383
+2026-11-08 18:53:51 SIGNAL SHORT LINK_USDT gate 15m [SMC-BOS] entry 10.722 SL 10.7535 TP 10.6276
+2026-11-08 18:53:59 [bybit] no data (network/geo-block?)
+2026-11-08 18:54:05 [binance] no data (network/geo-block?)
+2026-11-08 18:54:06 CLOSED long LIT-USDT okx [SMC-CHoCH] R=-1.0
+2026-11-08 18:54:07 CLOSED long BTC-USDT okx [PA] R=-1.0
+2026-11-08 18:54:07 CLOSED long SOL-USDT kucoin [SMC-CHoCH] R=-1.0
+2026-11-08 18:54:07 CLOSED short AKE_USDT gate [PA] R=-1.0
+2026-11-08 18:54:08 paper: 58 closed, win 14%, total -26.0R, 9 open | A+ only: 3 trades, -3.0R
