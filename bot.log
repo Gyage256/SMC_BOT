@@ -149,3 +149,15 @@
 2026-11-07 21:46:33 [binance] no data (network/geo-block?)
 2026-11-07 21:46:33 CLOSED short NEAR-USDT okx [PA] R=+3.0
 2026-11-07 21:46:34 paper: 41 closed, win 12%, total -21.0R, 7 open | A+ only: 3 trades, -3.0R
+2026-11-08 00:55:57 bot started (paper mode, no real orders)
+2026-11-08 00:55:58 SIGNAL LONG BTC-USDT okx 15m [SMC-CHoCH] entry 75757.9 SL 75709.9 TP 75902
+2026-11-08 00:55:59 SIGNAL LONG ETH-USDT okx 15m [SMC-CHoCH] entry 2235.94 SL 2233.25 TP 2244.02
+2026-11-08 00:56:00 SIGNAL SHORT ZEC-USDT okx 1h [SMC-BOS] entry 1261.7 SL 1276.56 TP 1217.11
+2026-11-08 00:56:01 SIGNAL LONG XRP-USDT okx 15m [SMC-CHoCH] entry 1.1621 SL 1.158 TP 1.17441
+2026-11-08 00:56:02 SIGNAL SHORT SOL-USDT okx 1h [SMC-BOS] entry 89.82 SL 89.9934 TP 89.2997
+2026-11-08 00:56:10 SIGNAL LONG XMR-USDT kucoin 15m [SMC-CHoCH] entry 600.71 SL 599.45 TP 604.49
+2026-11-08 00:56:18 SIGNAL SHORT SEI-USDT kucoin 1h [SMC-BOS] entry 0.04579 SL 0.0459907 TP 0.0451879
+2026-11-08 00:56:40 [bybit] no data (network/geo-block?)
+2026-11-08 00:56:46 [binance] no data (network/geo-block?)
+2026-11-08 00:56:47 CLOSED short SONIC-USDT kucoin [SMC-CHoCH] R=+3.0
+2026-11-08 00:56:49 paper: 42 closed, win 14%, total -18.0R, 13 open | A+ only: 3 trades, -3.0R
