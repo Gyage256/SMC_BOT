@@ -232,3 +232,15 @@
 2026-11-09 09:42:29 CLOSED short WLD-USDT okx [SMC-BOS] R=-1.0
 2026-11-09 09:42:29 CLOSED long ENA_USDT gate [SMC-CHoCH] R=-1.0
 2026-11-09 09:42:30 paper: 68 closed, win 18%, total -20.0R, 8 open | A+ only: 3 trades, -3.0R
+2026-11-09 20:11:36 bot started (paper mode, no real orders)
+2026-11-09 20:11:38 SIGNAL LONG ZEC-USDT okx 15m [SMC-CHoCH] entry 1173.65 SL 1164.44 TP 1201.27
+2026-11-09 20:11:52 SIGNAL LONG SUI-USDT kucoin 1h [PA] entry 0.8503 SL 0.845261 TP 0.865416
+2026-11-09 20:12:12 [bybit] no data (network/geo-block?)
+2026-11-09 20:12:18 [binance] no data (network/geo-block?)
+2026-11-09 20:12:18 CLOSED short USD1_USDT gate [SMC-BOS] R=-1.0
+2026-11-09 20:12:19 CLOSED short UNI-USDT okx [SMC-BOS+SUPPLY] R=-1.0
+2026-11-09 20:12:19 CLOSED short ENA_USDT gate [SMC-BOS+SUPPLY] R=-1.0
+2026-11-09 20:12:19 CLOSED short HYPE-USDT okx [SMC-BOS] R=-1.0
+2026-11-09 20:12:19 CLOSED short SONIC-USDT kucoin [SMC-BOS] R=-1.0
+2026-11-09 20:12:19 CLOSED long XMR-USDT kucoin [PA] R=-1.0
+2026-11-09 20:12:20 paper: 74 closed, win 16%, total -26.0R, 4 open | A+ only: 5 trades, -5.0R
