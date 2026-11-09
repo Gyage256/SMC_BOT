@@ -223,3 +223,12 @@
 2026-11-09 02:04:32 [bybit] no data (network/geo-block?)
 2026-11-09 02:04:38 [binance] no data (network/geo-block?)
 2026-11-09 02:04:41 paper: 66 closed, win 18%, total -18.0R, 7 open | A+ only: 3 trades, -3.0R
+2026-11-09 09:41:42 bot started (paper mode, no real orders)
+2026-11-09 09:41:48 SIGNAL SHORT HYPE-USDT okx 1h [SMC-BOS] entry 74.048 SL 74.5175 TP 72.6396
+2026-11-09 09:41:57 SIGNAL SHORT SONIC-USDT kucoin 1h [SMC-BOS] entry 0.01961 SL 0.0200133 TP 0.0184001
+2026-11-09 09:41:58 SIGNAL LONG XMR-USDT kucoin 15m [PA] entry 600.55 SL 597.436 TP 609.893
+2026-11-09 09:42:22 [bybit] no data (network/geo-block?)
+2026-11-09 09:42:28 [binance] no data (network/geo-block?)
+2026-11-09 09:42:29 CLOSED short WLD-USDT okx [SMC-BOS] R=-1.0
+2026-11-09 09:42:29 CLOSED long ENA_USDT gate [SMC-CHoCH] R=-1.0
+2026-11-09 09:42:30 paper: 68 closed, win 18%, total -20.0R, 8 open | A+ only: 3 trades, -3.0R
