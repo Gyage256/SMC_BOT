@@ -272,3 +272,7 @@
 2026-11-10 18:14:42 CLOSED long XNVDA-USDT okx [SMC-BOS] R=-1.0
 2026-11-10 18:14:42 CLOSED short SONIC-USDT kucoin [SMC-CHoCH] R=-1.0
 2026-11-10 18:14:42 paper: 84 closed, win 17%, total -28.0R, 0 open | A+ only: 5 trades, -5.0R
+2026-11-10 23:31:25 bot started (paper mode, no real orders)
+2026-11-10 23:32:00 [bybit] no data (network/geo-block?)
+2026-11-10 23:32:06 [binance] no data (network/geo-block?)
+2026-11-10 23:32:06 paper: 84 closed, win 17%, total -28.0R, 0 open | A+ only: 5 trades, -5.0R
