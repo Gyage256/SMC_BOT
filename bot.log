@@ -253,3 +253,12 @@
 2026-11-10 02:48:15 CLOSED long ZEC-USDT okx [SMC-CHoCH] R=-1.0
 2026-11-10 02:48:15 CLOSED long SUI-USDT kucoin [PA] R=-1.0
 2026-11-10 02:48:15 paper: 76 closed, win 16%, total -28.0R, 5 open | A+ only: 5 trades, -5.0R
+2026-11-10 10:30:21 bot started (paper mode, no real orders)
+2026-11-10 10:30:26 SIGNAL LONG PEPE-USDT okx 15m [PA] entry 5.3059e-06 SL 5.26114e-06 TP 5.44018e-06
+2026-11-10 10:30:28 SIGNAL LONG XNVDA-USDT okx 1h [SMC-BOS] entry 182.71 SL 177.985 TP 196.885
+2026-11-10 10:30:34 SIGNAL SHORT SONIC-USDT kucoin 15m [SMC-CHoCH] entry 0.02003 SL 0.0201446 TP 0.0196863
+2026-11-10 10:31:02 [bybit] no data (network/geo-block?)
+2026-11-10 10:31:08 [binance] no data (network/geo-block?)
+2026-11-10 10:31:09 CLOSED short XMR-USDT kucoin [PA] R=+3.0
+2026-11-10 10:31:09 CLOSED long BNB-USDT kucoin [PA] R=-1.0
+2026-11-10 10:31:10 paper: 78 closed, win 17%, total -26.0R, 6 open | A+ only: 5 trades, -5.0R
