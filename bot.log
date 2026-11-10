@@ -262,3 +262,13 @@
 2026-11-10 10:31:09 CLOSED short XMR-USDT kucoin [PA] R=+3.0
 2026-11-10 10:31:09 CLOSED long BNB-USDT kucoin [PA] R=-1.0
 2026-11-10 10:31:10 paper: 78 closed, win 17%, total -26.0R, 6 open | A+ only: 5 trades, -5.0R
+2026-11-10 18:13:55 bot started (paper mode, no real orders)
+2026-11-10 18:14:35 [bybit] no data (network/geo-block?)
+2026-11-10 18:14:42 [binance] no data (network/geo-block?)
+2026-11-10 18:14:42 CLOSED short ZEC-USDT okx [SMC-BOS] R=+3.0
+2026-11-10 18:14:42 CLOSED long NEAR-USDT okx [DEMAND] R=-1.0
+2026-11-10 18:14:42 CLOSED short NEAR_USDT gate [PA] R=-1.0
+2026-11-10 18:14:42 CLOSED long PEPE-USDT okx [PA] R=-1.0
+2026-11-10 18:14:42 CLOSED long XNVDA-USDT okx [SMC-BOS] R=-1.0
+2026-11-10 18:14:42 CLOSED short SONIC-USDT kucoin [SMC-CHoCH] R=-1.0
+2026-11-10 18:14:42 paper: 84 closed, win 17%, total -28.0R, 0 open | A+ only: 5 trades, -5.0R
