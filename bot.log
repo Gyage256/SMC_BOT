@@ -276,3 +276,15 @@
 2026-11-10 23:32:00 [bybit] no data (network/geo-block?)
 2026-11-10 23:32:06 [binance] no data (network/geo-block?)
 2026-11-10 23:32:06 paper: 84 closed, win 17%, total -28.0R, 0 open | A+ only: 5 trades, -5.0R
+2026-11-11 02:59:26 bot started (paper mode, no real orders)
+2026-11-11 02:59:27 SIGNAL LONG BTC-USDT okx 15m [PA] entry 73736.6 SL 73197.8 TP 75353.1
+2026-11-11 02:59:28 SIGNAL SHORT SOL-USDT okx 1h [PA] entry 83.22 SL 84.1876 TP 80.3173
+2026-11-11 02:59:32 SIGNAL SHORT DOGE-USDT okx 1h [SUPPLY] entry 0.06828 SL 0.0695719 TP 0.0644044
+2026-11-11 02:59:32 SIGNAL SHORT UNI-USDT okx 15m [SMC-CHoCH] entry 6.762 SL 6.83063 TP 6.55611
+2026-11-11 02:59:37 SIGNAL LONG XMR-USDT kucoin 15m [PA] entry 564.11 SL 559.217 TP 578.789
+2026-11-11 02:59:41 SIGNAL LONG TAO-USDT kucoin 15m [PA] entry 220.75 SL 218.254 TP 228.237
+2026-11-11 02:59:42 SIGNAL LONG BNB-USDT kucoin 15m [PA] entry 682.73 SL 678.148 TP 696.476
+2026-11-11 02:59:52 SIGNAL SHORT GT_USDT gate 1h [PA] entry 9.74 SL 9.85214 TP 9.40357
+2026-11-11 02:59:59 [bybit] no data (network/geo-block?)
+2026-11-11 03:00:05 [binance] no data (network/geo-block?)
+2026-11-11 03:00:06 paper: 84 closed, win 17%, total -28.0R, 8 open | A+ only: 5 trades, -5.0R
