@@ -322,3 +322,13 @@
 2026-11-12 00:42:36 CLOSED short UNI-USDT okx [SMC-BOS+SUPPLY] R=+3.0
 2026-11-12 00:42:36 CLOSED long SUI-USDT kucoin [SMC-BOS] R=-1.0
 2026-11-12 00:42:36 paper: 96 closed, win 18%, total -28.0R, 6 open | A+ only: 6 trades, -2.0R
+2026-11-12 07:46:26 bot started (paper mode, no real orders)
+2026-11-12 07:46:27 SIGNAL SHORT ETH-USDT okx 15m [PA] entry 2047.86 SL 2052.56 TP 2033.76
+2026-11-12 07:46:28 SIGNAL SHORT ZEC-USDT okx 15m [PA] entry 985 SL 992.592 TP 962.223
+2026-11-12 07:46:41 SIGNAL SHORT LTC-USDT kucoin 15m [PA] entry 49.72 SL 49.8978 TP 49.1866
+2026-11-12 07:47:01 [bybit] no data (network/geo-block?)
+2026-11-12 07:47:07 [binance] no data (network/geo-block?)
+2026-11-12 07:47:07 CLOSED long BTC-USDT okx [PA] R=-0.328
+2026-11-12 07:47:08 CLOSED short JCT-USDT kucoin [PA] R=+3.0
+2026-11-12 07:47:08 CLOSED short ARIA_USDT gate [PA] R=-1.0
+2026-11-12 07:47:08 paper: 99 closed, win 18%, total -26.3R, 6 open | A+ only: 6 trades, -2.0R
