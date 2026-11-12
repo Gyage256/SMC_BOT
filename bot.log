@@ -332,3 +332,17 @@
 2026-11-12 07:47:08 CLOSED short JCT-USDT kucoin [PA] R=+3.0
 2026-11-12 07:47:08 CLOSED short ARIA_USDT gate [PA] R=-1.0
 2026-11-12 07:47:08 paper: 99 closed, win 18%, total -26.3R, 6 open | A+ only: 6 trades, -2.0R
+2026-11-12 16:21:15 bot started (paper mode, no real orders)
+2026-11-12 16:21:17 SIGNAL SHORT SOL-USDT okx 15m [SMC-BOS] entry 81.87 SL 82.4375 TP 80.1675
+2026-11-12 16:21:18 SIGNAL SHORT XNVDA-USDT okx 15m [SUPPLY] entry 166.81 SL 170.901 TP 154.537
+2026-11-12 16:21:22 SIGNAL SHORT HYPE-USDT okx 1h [SMC-CHoCH] entry 71.341 SL 72.0024 TP 69.3569
+2026-11-12 16:21:23 SIGNAL LONG XSNDK-USDT okx 15m [PA] entry 948.4 SL 934.506 TP 990.081
+2026-11-12 16:21:27 SIGNAL SHORT XMR-USDT kucoin 1h [SMC-CHoCH] entry 557.14 SL 563.909 TP 536.832
+2026-11-12 16:21:29 SIGNAL SHORT TAO-USDT kucoin 15m [SUPPLY] entry 210.11 SL 211.35 TP 206.391
+2026-11-12 16:21:51 [bybit] no data (network/geo-block?)
+2026-11-12 16:21:57 [binance] no data (network/geo-block?)
+2026-11-12 16:21:57 CLOSED short AKE_USDT gate [SMC-BOS] R=-1.0
+2026-11-12 16:21:58 CLOSED short ETH-USDT okx [PA] R=-1.0
+2026-11-12 16:21:58 CLOSED short ZEC-USDT okx [PA] R=-1.0
+2026-11-12 16:21:58 CLOSED short LTC-USDT kucoin [PA] R=+3.0
+2026-11-12 16:21:59 paper: 103 closed, win 18%, total -26.3R, 8 open | A+ only: 6 trades, -2.0R
