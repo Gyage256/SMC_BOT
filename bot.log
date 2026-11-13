@@ -393,3 +393,10 @@
 2026-11-13 17:43:28 CLOSED long XAUT-USDT okx [SMC-CHoCH] R=-1.0
 2026-11-13 17:43:28 CLOSED long XRP-USDT kucoin [PA] R=-1.0
 2026-11-13 17:43:28 paper: 121 closed, win 19%, total -28.3R, 3 open | A+ only: 6 trades, -2.0R
+2026-11-13 22:56:05 bot started (paper mode, no real orders)
+2026-11-13 22:56:14 SIGNAL SHORT XAUT-USDT okx 15m [PA] entry 3877 SL 3878.97 TP 3871.09
+2026-11-13 22:56:45 [bybit] no data (network/geo-block?)
+2026-11-13 22:56:51 [binance] no data (network/geo-block?)
+2026-11-13 22:56:51 CLOSED short PEPE-USDT okx [SMC-BOS] R=-1.0
+2026-11-13 22:56:51 CLOSED long NEAR-USDT okx [PA] R=-1.0
+2026-11-13 22:56:52 paper: 123 closed, win 19%, total -30.3R, 2 open | A+ only: 6 trades, -2.0R
