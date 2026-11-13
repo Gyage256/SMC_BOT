@@ -370,3 +370,17 @@
 2026-11-13 02:50:10 CLOSED short SOL-USDT okx [SMC-BOS] R=+3.0
 2026-11-13 02:50:10 CLOSED short NEAR-USDT kucoin [PA] R=-1.0
 2026-11-13 02:50:12 paper: 109 closed, win 19%, total -24.3R, 12 open | A+ only: 6 trades, -2.0R
+2026-11-13 10:07:42 bot started (paper mode, no real orders)
+2026-11-13 10:07:52 SIGNAL LONG XRP-USDT kucoin 15m [PA] entry 1.02941 SL 1.02705 TP 1.0365
+2026-11-13 10:08:17 [bybit] no data (network/geo-block?)
+2026-11-13 10:08:23 [binance] no data (network/geo-block?)
+2026-11-13 10:08:23 CLOSED short DOGE-USDT okx [SUPPLY] R=+3.0
+2026-11-13 10:08:24 CLOSED long OKB-USDT okx [SMC-BOS] R=-1.0
+2026-11-13 10:08:24 CLOSED short PEPE-USDT okx [SMC-BOS] R=-1.0
+2026-11-13 10:08:25 CLOSED short AKE_USDT gate [PA] R=-1.0
+2026-11-13 10:08:25 CLOSED short BTC-USDT okx [SMC-BOS] R=+3.0
+2026-11-13 10:08:25 CLOSED long PEPE-USDT okx [SMC-BOS] R=-1.0
+2026-11-13 10:08:25 CLOSED long GRAM-USDT okx [SMC-CHoCH] R=-1.0
+2026-11-13 10:08:25 CLOSED short GRAM-USDT okx [PA] R=-1.0
+2026-11-13 10:08:26 CLOSED long ZEC-USDT kucoin [SMC-CHoCH] R=-1.0
+2026-11-13 10:08:26 paper: 118 closed, win 19%, total -25.3R, 4 open | A+ only: 6 trades, -2.0R
