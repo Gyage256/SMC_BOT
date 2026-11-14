@@ -408,3 +408,12 @@
 2026-11-14 02:57:52 [binance] no data (network/geo-block?)
 2026-11-14 02:57:52 CLOSED short XAUT-USDT okx [PA] R=+3.0
 2026-11-14 02:57:53 paper: 124 closed, win 19%, total -27.3R, 4 open | A+ only: 6 trades, -2.0R
+2026-11-14 10:00:43 bot started (paper mode, no real orders)
+2026-11-14 10:00:53 SIGNAL SHORT SUI-USDT okx 15m [SMC-BOS] entry 0.7751 SL 0.778964 TP 0.763507
+2026-11-14 10:01:24 [bybit] no data (network/geo-block?)
+2026-11-14 10:01:30 [binance] no data (network/geo-block?)
+2026-11-14 10:01:30 CLOSED short XRP-USDT okx [SMC-BOS] R=+3.0
+2026-11-14 10:01:30 CLOSED short NEAR-USDT okx [PA] R=+3.0
+2026-11-14 10:01:30 CLOSED short XMR-USDT kucoin [SMC-CHoCH] R=-1.0
+2026-11-14 10:01:30 CLOSED long AKE-USDT kucoin [SMC-CHoCH] R=-1.0
+2026-11-14 10:01:31 paper: 128 closed, win 20%, total -23.3R, 1 open | A+ only: 6 trades, -2.0R
