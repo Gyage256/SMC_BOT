@@ -439,3 +439,12 @@
 2026-11-15 07:19:00 [binance] no data (network/geo-block?)
 2026-11-15 07:19:01 CLOSED long AKE_USDT gate [PA] R=-1.0
 2026-11-15 07:19:01 paper: 130 closed, win 21%, total -21.3R, 3 open | A+ only: 6 trades, -2.0R
+2026-11-15 14:51:54 bot started (paper mode, no real orders)
+2026-11-15 14:51:55 SIGNAL SHORT BTC-USDT okx 1h [PA] entry 65440.1 SL 65898.2 TP 64065.9
+2026-11-15 14:51:59 SIGNAL SHORT XRP-USDT okx 1h [PA] entry 0.9694 SL 0.980167 TP 0.937099
+2026-11-15 14:52:03 SIGNAL SHORT NEAR-USDT okx 1h [PA] entry 3.163 SL 3.20538 TP 3.03586
+2026-11-15 14:52:14 SIGNAL SHORT XLM-USDT kucoin 1h [PA] entry 0.1398 SL 0.141214 TP 0.135557
+2026-11-15 14:53:34 CLOSED short PEPE-USDT okx [SMC-BOS] R=-1.0
+2026-11-15 14:53:34 CLOSED long NEAR-USDT okx [SMC-CHoCH] R=-1.0
+2026-11-15 14:53:35 CLOSED long XLM-USDT kucoin [PA] R=-1.0
+2026-11-15 14:53:36 paper: 133 closed, win 20%, total -24.3R, 4 open | A+ only: 6 trades, -2.0R
