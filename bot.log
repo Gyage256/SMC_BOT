@@ -432,3 +432,10 @@
 2026-11-15 00:50:49 [bybit] no data (network/geo-block?)
 2026-11-15 00:50:55 [binance] no data (network/geo-block?)
 2026-11-15 00:50:55 paper: 129 closed, win 21%, total -20.3R, 2 open | A+ only: 6 trades, -2.0R
+2026-11-15 07:18:15 bot started (paper mode, no real orders)
+2026-11-15 07:18:22 SIGNAL LONG NEAR-USDT okx 15m [SMC-CHoCH] entry 3.132 SL 3.09253 TP 3.25041
+2026-11-15 07:18:30 SIGNAL LONG XLM-USDT kucoin 15m [PA] entry 0.1372 SL 0.136722 TP 0.138634
+2026-11-15 07:18:54 [bybit] no data (network/geo-block?)
+2026-11-15 07:19:00 [binance] no data (network/geo-block?)
+2026-11-15 07:19:01 CLOSED long AKE_USDT gate [PA] R=-1.0
+2026-11-15 07:19:01 paper: 130 closed, win 21%, total -21.3R, 3 open | A+ only: 6 trades, -2.0R
