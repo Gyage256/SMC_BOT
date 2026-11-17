@@ -513,3 +513,18 @@
 2026-11-17 00:14:00 CLOSED long PEPE-USDT okx [PA] R=+3.0
 2026-11-17 00:14:01 CLOSED long EVAA_USDT gate [PA] R=-1.0
 2026-11-17 00:14:03 paper: 152 closed, win 20%, total -31.3R, 11 open | A+ only: 7 trades, -3.0R
+2026-11-17 08:06:23 bot started (paper mode, no real orders)
+2026-11-17 08:06:27 SIGNAL LONG LIT-USDT okx 1h [PA] entry 3.0099 SL 2.96674 TP 3.13938
+2026-11-17 08:06:27 SIGNAL LONG XRP-USDT okx 15m [PA] entry 0.9624 SL 0.958893 TP 0.972921
+2026-11-17 08:06:29 SIGNAL LONG DOGE-USDT okx 15m [PA] entry 0.05912 SL 0.0589355 TP 0.0596735
+2026-11-17 08:06:39 SIGNAL LONG LTC-USDT kucoin 15m [PA] entry 44.79 SL 44.5927 TP 45.3819
+2026-11-17 08:06:57 [bybit] no data (network/geo-block?)
+2026-11-17 08:07:03 [binance] no data (network/geo-block?)
+2026-11-17 08:07:03 CLOSED short BTC-USDT okx [PA] R=+3.0
+2026-11-17 08:07:04 CLOSED short NEAR-USDT okx [SMC-CHoCH] R=-1.0
+2026-11-17 08:07:04 CLOSED long XLM-USDT kucoin [PA] R=-1.0
+2026-11-17 08:07:04 CLOSED long TAO-USDT kucoin [PA] R=-1.0
+2026-11-17 08:07:04 CLOSED short LTC-USDT kucoin [SMC-CHoCH] R=-1.0
+2026-11-17 08:07:04 CLOSED short DOGE_USDT gate [SMC-CHoCH] R=-1.0
+2026-11-17 08:07:04 CLOSED short LINK_USDT gate [SMC-BOS] R=-1.0
+2026-11-17 08:07:05 paper: 159 closed, win 19%, total -34.3R, 8 open | A+ only: 7 trades, -3.0R
