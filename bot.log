@@ -587,3 +587,9 @@
 2026-11-18 16:23:24 CLOSED long LINK_USDT gate [PA] R=-1.0
 2026-11-18 16:23:24 CLOSED long AAVE_USDT gate [PA] R=-1.0
 2026-11-18 16:23:24 paper: 182 closed, win 18%, total -53.3R, 5 open | A+ only: 8 trades, -4.0R
+2026-11-18 23:00:26 bot started (paper mode, no real orders)
+2026-11-18 23:00:56 SIGNAL LONG EVAA_USDT gate 15m [PA] entry 3.9941 SL 3.95574 TP 4.10919
+2026-11-18 23:01:06 [bybit] no data (network/geo-block?)
+2026-11-18 23:01:12 [binance] no data (network/geo-block?)
+2026-11-18 23:01:13 CLOSED short ZEC_USDT gate [PA] R=-1.0
+2026-11-18 23:01:13 paper: 183 closed, win 17%, total -54.3R, 5 open | A+ only: 8 trades, -4.0R
