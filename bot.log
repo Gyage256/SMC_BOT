@@ -574,3 +574,16 @@
 2026-11-18 07:00:04 CLOSED short BTC-USDT okx [SMC-BOS] R=-1.0
 2026-11-18 07:00:04 CLOSED long LIT-USDT okx [SMC-BOS] R=-1.0
 2026-11-18 07:00:06 paper: 177 closed, win 18%, total -48.3R, 6 open | A+ only: 8 trades, -4.0R
+2026-11-18 16:22:34 bot started (paper mode, no real orders)
+2026-11-18 16:22:39 SIGNAL SHORT XRP-USDT okx 15m [SMC-BOS] entry 0.9733 SL 0.986988 TP 0.932236
+2026-11-18 16:22:50 SIGNAL SHORT ASTER-USDT kucoin 15m [PA] entry 0.5468 SL 0.556511 TP 0.517668
+2026-11-18 16:22:54 SIGNAL SHORT TAO-USDT kucoin 1h [SMC-CHoCH] entry 192.08 SL 196.44 TP 179.001
+2026-11-18 16:23:02 SIGNAL SHORT ZEC_USDT gate 1h [PA] entry 927.74 SL 938.879 TP 894.322
+2026-11-18 16:23:16 [bybit] no data (network/geo-block?)
+2026-11-18 16:23:23 [binance] no data (network/geo-block?)
+2026-11-18 16:23:23 CLOSED long HYPE-USDT okx [PA] R=-1.0
+2026-11-18 16:23:23 CLOSED long BTC-USDT kucoin [PA] R=-1.0
+2026-11-18 16:23:23 CLOSED long EVAA_USDT gate [PA] R=-1.0
+2026-11-18 16:23:24 CLOSED long LINK_USDT gate [PA] R=-1.0
+2026-11-18 16:23:24 CLOSED long AAVE_USDT gate [PA] R=-1.0
+2026-11-18 16:23:24 paper: 182 closed, win 18%, total -53.3R, 5 open | A+ only: 8 trades, -4.0R
