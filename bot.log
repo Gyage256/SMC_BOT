@@ -593,3 +593,12 @@
 2026-11-18 23:01:12 [binance] no data (network/geo-block?)
 2026-11-18 23:01:13 CLOSED short ZEC_USDT gate [PA] R=-1.0
 2026-11-18 23:01:13 paper: 183 closed, win 17%, total -54.3R, 5 open | A+ only: 8 trades, -4.0R
+2026-11-19 04:07:55 bot started (paper mode, no real orders)
+2026-11-19 04:08:03 SIGNAL SHORT BTC-USDT kucoin 15m [SUPPLY] entry 63195.5 SL 63302 TP 62876
+2026-11-19 04:08:04 SIGNAL SHORT ETH-USDT kucoin 15m [SUPPLY] entry 1793.7 SL 1795.12 TP 1789.44
+2026-11-19 04:08:06 SIGNAL SHORT XLM-USDT kucoin 15m [SMC-BOS] entry 0.1369 SL 0.137871 TP 0.133986
+2026-11-19 04:08:10 SIGNAL LONG TAO-USDT kucoin 1h [PA] entry 194.57 SL 189.81 TP 208.851
+2026-11-19 04:08:28 [bybit] no data (network/geo-block?)
+2026-11-19 04:08:34 [binance] no data (network/geo-block?)
+2026-11-19 04:08:35 CLOSED long EVAA_USDT gate [PA] R=+3.0
+2026-11-19 04:08:35 paper: 184 closed, win 18%, total -51.3R, 8 open | A+ only: 8 trades, -4.0R
