@@ -622,3 +622,16 @@
 2026-11-19 13:00:45 CLOSED short ETH-USDT kucoin [SUPPLY] R=-1.0
 2026-11-19 13:00:46 CLOSED short XLM-USDT kucoin [SMC-BOS] R=-1.0
 2026-11-19 13:00:47 paper: 191 closed, win 18%, total -54.3R, 10 open | A+ only: 8 trades, -4.0R
+2026-11-19 21:23:27 bot started (paper mode, no real orders)
+2026-11-19 21:24:00 [bybit] no data (network/geo-block?)
+2026-11-19 21:24:06 [binance] no data (network/geo-block?)
+2026-11-19 21:24:06 CLOSED long BTC-USDT okx [PA] R=-1.0
+2026-11-19 21:24:06 CLOSED long ETH-USDT okx [PA] R=-1.0
+2026-11-19 21:24:06 CLOSED long ZEC-USDT okx [PA] R=-1.0
+2026-11-19 21:24:07 CLOSED short XNVDA-USDT okx [PA] R=-1.0
+2026-11-19 21:24:07 CLOSED short HYPE-USDT okx [SMC-CHoCH] R=-1.0
+2026-11-19 21:24:07 CLOSED short NEAR-USDT okx [SMC-BOS] R=+3.0
+2026-11-19 21:24:07 CLOSED long DOGE-USDT okx [PA] R=-1.0
+2026-11-19 21:24:07 CLOSED long XLM-USDT kucoin [PA] R=-1.0
+2026-11-19 21:24:07 CLOSED short AAVE_USDT gate [PA] R=+3.0
+2026-11-19 21:24:07 paper: 200 closed, win 18%, total -55.3R, 1 open | A+ only: 8 trades, -4.0R
