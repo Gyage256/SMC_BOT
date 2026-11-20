@@ -635,3 +635,11 @@
 2026-11-19 21:24:07 CLOSED long XLM-USDT kucoin [PA] R=-1.0
 2026-11-19 21:24:07 CLOSED short AAVE_USDT gate [PA] R=+3.0
 2026-11-19 21:24:07 paper: 200 closed, win 18%, total -55.3R, 1 open | A+ only: 8 trades, -4.0R
+2026-11-20 02:30:06 bot started (paper mode, no real orders)
+2026-11-20 02:30:09 SIGNAL A+ SHORT XRP-USDT okx 1h [SMC-CHoCH+PA] entry 0.9535 SL 0.981789 TP 0.868634
+2026-11-20 02:30:12 SIGNAL SHORT DOGE-USDT okx 1h [SMC-CHoCH] entry 0.05729 SL 0.0592149 TP 0.0515152
+2026-11-20 02:30:13 SIGNAL SHORT PEPE-USDT okx 1h [PA] entry 3.5959e-06 SL 3.75309e-06 TP 3.12432e-06
+2026-11-20 02:30:41 [bybit] no data (network/geo-block?)
+2026-11-20 02:30:47 [binance] no data (network/geo-block?)
+2026-11-20 02:30:48 CLOSED long TAO-USDT kucoin [PA] R=-1.0
+2026-11-20 02:30:48 paper: 201 closed, win 18%, total -56.3R, 3 open | A+ only: 8 trades, -4.0R
