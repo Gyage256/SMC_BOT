@@ -661,3 +661,12 @@
 2026-11-20 18:44:26 CLOSED long XLM-USDT kucoin [SMC-CHoCH] R=-1.0
 2026-11-20 18:44:26 CLOSED long ETH_USDT gate [PA] R=-1.0
 2026-11-20 18:44:27 paper: 204 closed, win 18%, total -59.3R, 7 open | A+ only: 8 trades, -4.0R
+2026-11-21 00:19:55 bot started (paper mode, no real orders)
+2026-11-21 00:20:09 SIGNAL SHORT XMR-USDT kucoin 1h [SMC-BOS] entry 457.73 SL 466.276 TP 432.091
+2026-11-21 00:20:38 [bybit] no data (network/geo-block?)
+2026-11-21 00:20:44 [binance] no data (network/geo-block?)
+2026-11-21 00:20:45 CLOSED long USDG-USDT okx [PA] R=+3.0
+2026-11-21 00:20:45 CLOSED short ZEC-USDT okx [SMC-BOS] R=+3.0
+2026-11-21 00:20:45 CLOSED short XAUT-USDT okx [SMC-BOS] R=-1.0
+2026-11-21 00:20:45 CLOSED short NEAR-USDT okx [SMC-BOS] R=-1.0
+2026-11-21 00:20:46 paper: 208 closed, win 18%, total -55.3R, 4 open | A+ only: 8 trades, -4.0R
