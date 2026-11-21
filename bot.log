@@ -689,3 +689,12 @@
 2026-11-21 15:33:38 CLOSED short UNI-USDT okx [SMC-BOS] R=-1.0
 2026-11-21 15:33:38 CLOSED short BNB-USDT kucoin [SUPPLY] R=-1.0
 2026-11-21 15:33:38 paper: 214 closed, win 19%, total -49.3R, 3 open | A+ only: 9 trades, -1.0R
+2026-11-21 21:07:28 bot started (paper mode, no real orders)
+2026-11-21 21:07:38 SIGNAL SHORT OKB-USDT okx 1h [PA] entry 79.62 SL 80.0451 TP 78.3446
+2026-11-21 21:07:44 SIGNAL SHORT XMR-USDT kucoin 1h [SUPPLY] entry 492.81 SL 499.292 TP 473.363
+2026-11-21 21:07:47 SIGNAL LONG TAO-USDT kucoin 1h [PA] entry 185.75 SL 184.505 TP 189.486
+2026-11-21 21:07:47 SIGNAL LONG LTC-USDT kucoin 15m [PA] entry 40.08 SL 39.9352 TP 40.5144
+2026-11-21 21:08:09 [bybit] no data (network/geo-block?)
+2026-11-21 21:08:16 [binance] no data (network/geo-block?)
+2026-11-21 21:08:16 CLOSED long UNI-USDT okx [PA] R=-1.0
+2026-11-21 21:08:17 paper: 215 closed, win 19%, total -50.3R, 6 open | A+ only: 9 trades, -1.0R
