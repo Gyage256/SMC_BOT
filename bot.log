@@ -739,3 +739,16 @@
 2026-11-22 16:16:49 CLOSED short XRP_USDT gate [PA] R=-1.0
 2026-11-22 16:16:49 CLOSED short EVAA_USDT gate [SMC-BOS] R=-1.0
 2026-11-22 16:16:50 paper: 229 closed, win 19%, total -52.3R, 7 open | A+ only: 9 trades, -1.0R
+2026-11-22 21:54:34 bot started (paper mode, no real orders)
+2026-11-22 21:54:36 SIGNAL LONG ZEC-USDT okx 15m [PA] entry 793.62 SL 790.75 TP 802.23
+2026-11-22 21:54:44 SIGNAL LONG XRP-USDT kucoin 15m [PA] entry 0.92755 SL 0.925818 TP 0.932745
+2026-11-22 21:54:53 SIGNAL SHORT PIEVERSE_USDT gate 15m [PA] entry 3.6687 SL 3.72051 TP 3.51327
+2026-11-22 21:54:56 SIGNAL LONG HYPE_USDT gate 15m [PA] entry 62.81 SL 62.6142 TP 63.3974
+2026-11-22 21:54:59 SIGNAL LONG NEAR_USDT gate 15m [PA] entry 3.003 SL 2.99432 TP 3.02904
+2026-11-22 21:55:07 [bybit] no data (network/geo-block?)
+2026-11-22 21:55:13 [binance] no data (network/geo-block?)
+2026-11-22 21:55:13 CLOSED long SOL-USDT okx [PA] R=+3.0
+2026-11-22 21:55:13 CLOSED long UNI-USDT okx [PA] R=-1.0
+2026-11-22 21:55:13 CLOSED long LIT-USDT okx [PA] R=-1.0
+2026-11-22 21:55:14 CLOSED short AKE_USDT gate [PA] R=-1.0
+2026-11-22 21:55:14 paper: 233 closed, win 19%, total -52.3R, 8 open | A+ only: 9 trades, -1.0R
