@@ -764,3 +764,13 @@
 2026-11-23 02:21:29 CLOSED long HYPE_USDT gate [PA] R=-1.0
 2026-11-23 02:21:30 CLOSED long NEAR_USDT gate [PA] R=-1.0
 2026-11-23 02:21:30 paper: 239 closed, win 19%, total -58.3R, 4 open | A+ only: 9 trades, -1.0R
+2026-11-23 11:03:18 bot started (paper mode, no real orders)
+2026-11-23 11:03:21 SIGNAL SHORT ZEC-USDT okx 1h [PA] entry 791.98 SL 798.703 TP 771.81
+2026-11-23 11:03:25 SIGNAL LONG OKB-USDT okx 15m [PA] entry 82.81 SL 82.6091 TP 83.4126
+2026-11-23 11:03:27 SIGNAL LONG BTC-USDT kucoin 15m [PA] entry 61435.4 SL 61299.5 TP 61843.1
+2026-11-23 11:03:51 [bybit] no data (network/geo-block?)
+2026-11-23 11:03:57 [binance] no data (network/geo-block?)
+2026-11-23 11:03:57 CLOSED short XMR-USDT kucoin [SUPPLY] R=-1.0
+2026-11-23 11:03:57 CLOSED long SOL-USDT okx [SMC-CHoCH] R=-1.0
+2026-11-23 11:03:58 CLOSED long AAPLX-USDT kucoin [PA] R=-1.0
+2026-11-23 11:03:58 paper: 242 closed, win 19%, total -61.3R, 4 open | A+ only: 9 trades, -1.0R
