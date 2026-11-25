@@ -815,3 +815,9 @@
 2026-11-25 02:23:02 CLOSED short PEPE-USDT okx [SMC-CHoCH] R=-1.0
 2026-11-25 02:23:02 CLOSED long ON_USDT gate [DEMAND] R=+3.0
 2026-11-25 02:23:02 paper: 256 closed, win 18%, total -67.3R, 1 open | A+ only: 9 trades, -1.0R
+2026-11-25 11:35:42 bot started (paper mode, no real orders)
+2026-11-25 11:35:44 SIGNAL SHORT ZEC-USDT okx 15m [PA] entry 725.61 SL 732.812 TP 704.005
+2026-11-25 11:35:51 SIGNAL SHORT PEPE-USDT okx 15m [PA] entry 3.4316e-06 SL 3.45547e-06 TP 3.36e-06
+2026-11-25 11:36:20 [bybit] no data (network/geo-block?)
+2026-11-25 11:36:26 [binance] no data (network/geo-block?)
+2026-11-25 11:36:26 paper: 256 closed, win 18%, total -67.3R, 3 open | A+ only: 9 trades, -1.0R
