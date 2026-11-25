@@ -821,3 +821,10 @@
 2026-11-25 11:36:20 [bybit] no data (network/geo-block?)
 2026-11-25 11:36:26 [binance] no data (network/geo-block?)
 2026-11-25 11:36:26 paper: 256 closed, win 18%, total -67.3R, 3 open | A+ only: 9 trades, -1.0R
+2026-11-25 20:38:10 bot started (paper mode, no real orders)
+2026-11-25 20:38:44 [bybit] no data (network/geo-block?)
+2026-11-25 20:38:50 [binance] no data (network/geo-block?)
+2026-11-25 20:38:50 CLOSED short ETH-USDT okx [SMC-BOS] R=+3.0
+2026-11-25 20:38:50 CLOSED short ZEC-USDT okx [PA] R=+3.0
+2026-11-25 20:38:50 CLOSED short PEPE-USDT okx [PA] R=+3.0
+2026-11-25 20:38:50 paper: 259 closed, win 19%, total -58.3R, 0 open | A+ only: 9 trades, -1.0R
