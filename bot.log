@@ -809,3 +809,9 @@
 2026-11-24 18:07:44 CLOSED short ZEC-USDT okx [SMC-BOS] R=+3.0
 2026-11-24 18:07:45 CLOSED long XLM-USDT kucoin [PA] R=-1.0
 2026-11-24 18:07:45 paper: 254 closed, win 18%, total -69.3R, 3 open | A+ only: 9 trades, -1.0R
+2026-11-25 02:22:17 bot started (paper mode, no real orders)
+2026-11-25 02:22:56 [bybit] no data (network/geo-block?)
+2026-11-25 02:23:02 [binance] no data (network/geo-block?)
+2026-11-25 02:23:02 CLOSED short PEPE-USDT okx [SMC-CHoCH] R=-1.0
+2026-11-25 02:23:02 CLOSED long ON_USDT gate [DEMAND] R=+3.0
+2026-11-25 02:23:02 paper: 256 closed, win 18%, total -67.3R, 1 open | A+ only: 9 trades, -1.0R
