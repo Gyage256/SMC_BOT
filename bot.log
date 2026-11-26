@@ -828,3 +828,8 @@
 2026-11-25 20:38:50 CLOSED short ZEC-USDT okx [PA] R=+3.0
 2026-11-25 20:38:50 CLOSED short PEPE-USDT okx [PA] R=+3.0
 2026-11-25 20:38:50 paper: 259 closed, win 19%, total -58.3R, 0 open | A+ only: 9 trades, -1.0R
+2026-11-26 03:07:33 bot started (paper mode, no real orders)
+2026-11-26 03:07:54 SIGNAL LONG LTC-USDT kucoin 15m [SMC-BOS] entry 43.45 SL 42.9432 TP 44.9704
+2026-11-26 03:08:17 [bybit] no data (network/geo-block?)
+2026-11-26 03:08:23 [binance] no data (network/geo-block?)
+2026-11-26 03:08:23 paper: 259 closed, win 19%, total -58.3R, 1 open | A+ only: 9 trades, -1.0R
