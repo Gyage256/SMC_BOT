@@ -842,3 +842,16 @@
 2026-11-26 12:25:50 [bybit] no data (network/geo-block?)
 2026-11-26 12:25:56 [binance] no data (network/geo-block?)
 2026-11-26 12:25:57 paper: 259 closed, win 19%, total -58.3R, 6 open | A+ only: 9 trades, -1.0R
+2026-11-26 21:49:01 bot started (paper mode, no real orders)
+2026-11-26 21:49:04 SIGNAL SHORT ZEC-USDT okx 1h [SUPPLY] entry 719.07 SL 731.681 TP 681.237
+2026-11-26 21:49:14 SIGNAL SHORT XMR-USDT kucoin 1h [SMC-BOS] entry 445.18 SL 459.178 TP 403.186
+2026-11-26 21:49:30 SIGNAL SHORT AAVE_USDT gate 1h [SMC-CHoCH] entry 95.44 SL 96.5189 TP 92.2034
+2026-11-26 21:49:42 [bybit] no data (network/geo-block?)
+2026-11-26 21:49:48 [binance] no data (network/geo-block?)
+2026-11-26 21:49:48 CLOSED long LTC-USDT kucoin [SMC-BOS] R=-1.0
+2026-11-26 21:49:48 CLOSED long NEAR-USDT okx [PA] R=-1.0
+2026-11-26 21:49:48 CLOSED short XAUT-USDT okx [SMC-CHoCH+PA] R=-1.0
+2026-11-26 21:49:48 CLOSED long SUI-USDT okx [PA] R=-1.0
+2026-11-26 21:49:49 CLOSED long XMR-USDT kucoin [SMC-CHoCH] R=-1.0
+2026-11-26 21:49:49 CLOSED short BNB-USDT kucoin [PA] R=-1.0
+2026-11-26 21:49:49 paper: 265 closed, win 19%, total -64.3R, 3 open | A+ only: 10 trades, -2.0R
