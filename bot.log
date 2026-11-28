@@ -909,3 +909,14 @@
 2026-11-28 03:53:38 CLOSED long XSOXL-USDT okx [PA] R=-1.0
 2026-11-28 03:53:38 CLOSED long LINK_USDT gate [DEMAND] R=-1.0
 2026-11-28 03:53:39 paper: 283 closed, win 18%, total -78.3R, 5 open | A+ only: 10 trades, -2.0R
+2026-11-28 12:45:23 bot started (paper mode, no real orders)
+2026-11-28 12:45:29 SIGNAL SHORT XRP-USDT okx 15m [PA] entry 0.9409 SL 0.942626 TP 0.935721
+2026-11-28 12:45:32 SIGNAL SHORT TRUMP-USDT okx 15m [PA] entry 0.7601 SL 0.769156 TP 0.732933
+2026-11-28 12:45:52 SIGNAL LONG EVAA_USDT gate 1h [PA] entry 2.0941 SL 1.89627 TP 2.68761
+2026-11-28 12:46:02 [bybit] no data (network/geo-block?)
+2026-11-28 12:46:08 [binance] no data (network/geo-block?)
+2026-11-28 12:46:08 CLOSED short SOL-USDT okx [SMC-CHoCH] R=+3.0
+2026-11-28 12:46:08 CLOSED long RLUSD-USDT okx [SMC-CHoCH] R=-1.0
+2026-11-28 12:46:09 CLOSED short BNB-USDT kucoin [SMC-CHoCH] R=-1.0
+2026-11-28 12:46:09 CLOSED short LTC-USDT kucoin [SMC-CHoCH] R=+3.0
+2026-11-28 12:46:09 paper: 287 closed, win 18%, total -74.3R, 4 open | A+ only: 10 trades, -2.0R
