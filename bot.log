@@ -897,3 +897,15 @@
 2026-11-27 22:06:53 CLOSED long BNB-USDT kucoin [PA] R=-1.0
 2026-11-27 22:06:53 CLOSED long DOGE_USDT gate [PA] R=-1.0
 2026-11-27 22:06:54 paper: 280 closed, win 18%, total -75.3R, 3 open | A+ only: 10 trades, -2.0R
+2026-11-28 03:52:53 bot started (paper mode, no real orders)
+2026-11-28 03:52:55 SIGNAL SHORT SOL-USDT okx 15m [SMC-CHoCH] entry 71.73 SL 71.8635 TP 71.3295
+2026-11-28 03:52:59 SIGNAL LONG RLUSD-USDT okx 15m [SMC-CHoCH] entry 1.001 SL 1.00089 TP 1.00132
+2026-11-28 03:53:11 SIGNAL SHORT BNB-USDT kucoin 15m [SMC-CHoCH] entry 554.737 SL 555.417 TP 552.697
+2026-11-28 03:53:11 SIGNAL SHORT LTC-USDT kucoin 15m [SMC-CHoCH] entry 44.73 SL 44.9729 TP 44.0012
+2026-11-28 03:53:25 SIGNAL SHORT AAVE_USDT gate 1h [PA] entry 94.56 SL 95.7781 TP 90.9056
+2026-11-28 03:53:31 [bybit] no data (network/geo-block?)
+2026-11-28 03:53:37 [binance] no data (network/geo-block?)
+2026-11-28 03:53:38 CLOSED short BTC-USDT okx [PA] R=-1.0
+2026-11-28 03:53:38 CLOSED long XSOXL-USDT okx [PA] R=-1.0
+2026-11-28 03:53:38 CLOSED long LINK_USDT gate [DEMAND] R=-1.0
+2026-11-28 03:53:39 paper: 283 closed, win 18%, total -78.3R, 5 open | A+ only: 10 trades, -2.0R
